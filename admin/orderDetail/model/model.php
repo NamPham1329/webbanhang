@@ -19,3 +19,20 @@ if(!empty($_GET['id']))
     $data = $orderDetail->get_detail();
 }
 ?>
+
+<?php
+class Order extends DB
+{
+    function getOrderbyIdCart($id)
+    {
+        $sql = "SELECT * FROM orderdetail WHERE order_id='$id'";
+        return $this->executeResult($sql);
+    }
+}
+$order = new Order();
+if(!empty($_GET['id']))
+{
+    $id = $_GET['id'];
+    $listOrder = $order->getOrderbyIdCart($id);
+}
+?>

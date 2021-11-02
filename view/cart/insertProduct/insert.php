@@ -88,7 +88,7 @@ if(!empty($_SESSION['users']) & (!empty($_POST['addToCart'])))
         $total = $price* $quantity;
         $cartDetail = new addOrder($order, $prd_name, $price, $prd_image, $quantity, $total);
         $cartDetail->saveCartDetail();
-}
     }
+}
     
 ?>

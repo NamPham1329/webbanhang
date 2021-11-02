@@ -21,9 +21,9 @@ class checkout extends DB{
         
     }
 }
-if(!empty($_POST['checkout'])){
-    $id = $_GET['id'];
-    $checkout = new checkout($id);
-    $checkout->checkOut();
-}
+    if(!empty($_POST['checkout'])){
+        $id = $_GET['id'];
+        $checkout = new checkout($id);
+        $checkout->checkOut();
+    }
 ?>

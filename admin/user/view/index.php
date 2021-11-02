@@ -7,7 +7,7 @@
     }
 require_once("../../layout/header.php");
 require_once("../../layout/sidebar.php"); 
-require_once("../../layout/header_desktop.php");
+require_once("../../layout/header_desktop.php"); var_dump($listAccount);
 ?>
             <!-- MAIN CONTENT-->
             <div class="main-content">
@@ -16,7 +16,9 @@ require_once("../../layout/header_desktop.php");
                         <div class="row">
                             <div class="col-md-12">
                                 <!-- DATA TABLE -->
+                                
                                 <h3 class="title-5 m-b-35">account</h3>
+                                
                                 <div class="table-responsive table-responsive-data2">
                                     <table class="table table-data2">
                                         <thead>
@@ -70,3 +72,4 @@ require_once("../../layout/header_desktop.php");
 
     </div>
     <?php require_once("../../layout/footer.php");?>
+    
